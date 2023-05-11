@@ -1,7 +1,8 @@
 {
-    "name": "kr37/craft-frontusers",
+    "name": "kr37/frontusers",
     "description": "Basic front-end user authentication for CraftCMS",
     "type": "craft-plugin",
+    "version": "v0.1.2",
     "license": "mit",
     "support": {
         "email": "rinzin@kr37.net",
