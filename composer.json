@@ -1,0 +1,48 @@
+{
+    "name": "kr37/craft-frontusers",
+    "description": "Basic front-end user authentication for CraftCMS",
+    "type": "craft-plugin",
+    "license": "mit",
+    "support": {
+        "email": "rinzin@kr37.net",
+        "issues": "https://github.com/kr37/frontusers/issues?state=open",
+        "source": "https://github.com/kr37/frontusers",
+        "docs": "https://github.com/kr37/frontusers",
+        "rss": "https://github.com/kr37/frontusers/releases.atom"
+    },
+    "require": {
+        "php": ">=8.0.2",
+        "craftcms/cms": "^4.4.10"
+    },
+    "require-dev": {
+        "craftcms/ecs": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "kr37\\frontusers\\": "src/"
+        }
+    },
+    "extra": {
+        "handle": "frontusers",
+        "name": "Frontusers",
+        "developer": "kr37",
+        "documentationUrl": "https://github.com/kr37/frontusers",
+        "class": "kr37\\frontusers\\Frontusers"
+    },
+    "scripts": {
+        "check-cs": "ecs check --ansi",
+        "fix-cs": "ecs check --ansi --fix",
+        "phpstan": "phpstan --memory-limit=1G"
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "8.0.2"
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
+    }
+}
+
